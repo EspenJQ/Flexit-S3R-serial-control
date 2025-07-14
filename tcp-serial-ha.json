@@ -1,0 +1,1051 @@
+[
+    {
+        "id": "64973aa54d2b8305",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1929614287ce3df0",
+        "type": "server",
+        "name": "Home",
+        "version": 5,
+        "addon": false,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": true,
+        "cacheJson": true,
+        "heartbeat": false,
+        "heartbeatInterval": "30",
+        "areaSelector": "friendlyName",
+        "deviceSelector": "friendlyName",
+        "entitySelector": "friendlyName",
+        "statusSeparator": ": ",
+        "statusYear": "hidden",
+        "statusMonth": "short",
+        "statusDay": "numeric",
+        "statusHourCycle": "default",
+        "statusTimeFormat": "h:m",
+        "enableGlobalContextStore": false
+    },
+    {
+        "id": "3c3f3d98716ba9cb",
+        "type": "ha-device-config",
+        "name": "Ventilation",
+        "hwVersion": "",
+        "manufacturer": "Flexit",
+        "model": "S3",
+        "swVersion": ""
+    },
+    {
+        "id": "037899b820c3dc44",
+        "type": "ha-entity-config",
+        "server": "1929614287ce3df0",
+        "deviceConfig": "3c3f3d98716ba9cb",
+        "name": "Ventilation fan speed",
+        "version": "6",
+        "entityType": "sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Ventilation fan speed"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": "level"
+            },
+            {
+                "property": "state_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "231568829677f580",
+        "type": "ha-entity-config",
+        "server": "1929614287ce3df0",
+        "deviceConfig": "3c3f3d98716ba9cb",
+        "name": "Heat exchanger",
+        "version": "6",
+        "entityType": "sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Ventilation heat exchanger temperature preset"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "temperature"
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": "°C"
+            },
+            {
+                "property": "state_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "60983e21f7b9437a",
+        "type": "ha-entity-config",
+        "server": "1929614287ce3df0",
+        "deviceConfig": "3c3f3d98716ba9cb",
+        "name": "Ventilation preheater on/off",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Ventilation preheater on/off"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "43c0f41a082f6860",
+        "type": "ha-entity-config",
+        "server": "1929614287ce3df0",
+        "deviceConfig": "3c3f3d98716ba9cb",
+        "name": "Ventilation heating element on/off",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Ventilation heating element"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "33f4d266b01834ee",
+        "type": "ha-entity-config",
+        "server": "1929614287ce3df0",
+        "deviceConfig": "3c3f3d98716ba9cb",
+        "name": "Fan level control",
+        "version": "6",
+        "entityType": "number",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Fan level control"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": ""
+            },
+            {
+                "property": "min_value",
+                "value": 1
+            },
+            {
+                "property": "max_value",
+                "value": 3
+            },
+            {
+                "property": "step_value",
+                "value": 1
+            },
+            {
+                "property": "mode",
+                "value": "auto"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "37c4f30cbaf80b0c",
+        "type": "ha-entity-config",
+        "server": "1929614287ce3df0",
+        "deviceConfig": "3c3f3d98716ba9cb",
+        "name": "Heat exchanger temperature preset",
+        "version": "6",
+        "entityType": "number",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Heat exchanger temperature preset"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "temperature"
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": "°C"
+            },
+            {
+                "property": "min_value",
+                "value": 15
+            },
+            {
+                "property": "max_value",
+                "value": 25
+            },
+            {
+                "property": "step_value",
+                "value": 1
+            },
+            {
+                "property": "mode",
+                "value": "auto"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "913ddf70b299e3b0",
+        "type": "ha-entity-config",
+        "server": "1929614287ce3df0",
+        "deviceConfig": "3c3f3d98716ba9cb",
+        "name": "Preheater",
+        "version": "6",
+        "entityType": "switch",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Preheater"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "switch"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "6908faa725f509b3",
+        "type": "ha-entity-config",
+        "server": "1929614287ce3df0",
+        "deviceConfig": "3c3f3d98716ba9cb",
+        "name": "Filter alarm",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Filter alarm"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "e360f7a79e59b8d3",
+        "type": "tcp in",
+        "z": "64973aa54d2b8305",
+        "name": "",
+        "server": "client",
+        "host": "192.168.1.8",
+        "port": "8887",
+        "datamode": "stream",
+        "datatype": "buffer",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 620,
+        "y": 880,
+        "wires": [
+            [
+                "2ea9bb9d0f084c34"
+            ]
+        ]
+    },
+    {
+        "id": "4939098d33e7cab7",
+        "type": "tcp out",
+        "z": "64973aa54d2b8305",
+        "name": "",
+        "host": "192.168.1.8",
+        "port": "8887",
+        "beserver": "client",
+        "base64": false,
+        "end": false,
+        "tls": "",
+        "x": 2440,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2ea9bb9d0f084c34",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "message filter",
+        "func": "if (msg.payload[0] = 193 && msg.payload[2] == 22 && msg.payload[4] == 14) {\n    var newMsg = { payload: msg.payload, topic: 'read' };\n    return newMsg; \n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 880,
+        "wires": [
+            [
+                "021d48dda631be93",
+                "348cc371d08ee52c",
+                "9a9e5790ec7596d5",
+                "11c2f65531168eec",
+                "a7149f7a8dfd3c4d",
+                "de03c66a081a193d",
+                "749dd37e3565e758",
+                "f24c09952615c740"
+            ]
+        ]
+    },
+    {
+        "id": "021d48dda631be93",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "fan level",
+        "func": "var newMsg = { payload: msg.payload[8]/17, topic: \"Fan level\" };\nreturn newMsg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 960,
+        "wires": [
+            [
+                "672a9e65b12ed19b"
+            ]
+        ]
+    },
+    {
+        "id": "348cc371d08ee52c",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "temperature",
+        "func": "var newMsg = { payload: msg.payload[12], topic: \"Heat exchanger preset temperature\" };\nreturn newMsg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 880,
+        "wires": [
+            [
+                "49bc68626eac7694",
+                "55a055db86c20978"
+            ]
+        ]
+    },
+    {
+        "id": "9a9e5790ec7596d5",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "preheat on/off",
+        "func": "var newMsg = { payload: msg.payload[9]/128 };\nreturn newMsg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 1060,
+        "wires": [
+            [
+                "6c22588b879d8307"
+            ]
+        ]
+    },
+    {
+        "id": "11c2f65531168eec",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "heating element on/off",
+        "func": "if (msg.payload[13] > 10 && msg.payload[14] >= 100) { \n    let output = 1;\n    var newMsg = { payload: output};\n    return newMsg;\n} else {\n    let output = 0;\n    var newMsg = { payload: output };\n    return newMsg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 1120,
+        "wires": [
+            [
+                "38b6bd9be2d46cfa"
+            ]
+        ]
+    },
+    {
+        "id": "672a9e65b12ed19b",
+        "type": "ha-sensor",
+        "z": "64973aa54d2b8305",
+        "name": "Ventilation fan speed",
+        "entityConfig": "037899b820c3dc44",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "allow",
+        "outputProperties": [],
+        "x": 1660,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49bc68626eac7694",
+        "type": "ha-sensor",
+        "z": "64973aa54d2b8305",
+        "name": "Heat exchanger temperature preset",
+        "entityConfig": "231568829677f580",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "allow",
+        "outputProperties": [],
+        "x": 1620,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c22588b879d8307",
+        "type": "ha-binary-sensor",
+        "z": "64973aa54d2b8305",
+        "name": "Ventilation preheater on/off",
+        "entityConfig": "60983e21f7b9437a",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "allow",
+        "outputProperties": [],
+        "x": 1640,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38b6bd9be2d46cfa",
+        "type": "ha-binary-sensor",
+        "z": "64973aa54d2b8305",
+        "name": "Ventilation heating element on/off",
+        "entityConfig": "43c0f41a082f6860",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "allow",
+        "outputProperties": [],
+        "x": 1620,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de03c66a081a193d",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "fan level raw",
+        "func": "var newMsg = { payload: msg.payload[8], object: 'raw' };\nreturn newMsg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 660,
+        "wires": [
+            [
+                "cf26a61b986167f3"
+            ]
+        ]
+    },
+    {
+        "id": "a7149f7a8dfd3c4d",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "preheat on/off raw",
+        "func": "var newMsg = { payload: msg.payload[9], topic: \"Preheat raw\" };\nreturn newMsg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 560,
+        "wires": [
+            [
+                "9be3f5176f8be735"
+            ]
+        ]
+    },
+    {
+        "id": "678e396899be1f33",
+        "type": "ha-number",
+        "z": "64973aa54d2b8305",
+        "name": "Fan level control",
+        "version": 1,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 1,
+        "entityConfig": "33f4d266b01834ee",
+        "mode": "listen",
+        "value": "payload",
+        "valueType": "msg",
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "value"
+            }
+        ],
+        "x": 660,
+        "y": 160,
+        "wires": [
+            [
+                "c5de0cb88911a03c"
+            ]
+        ]
+    },
+    {
+        "id": "c5de0cb88911a03c",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "scaling to raw",
+        "func": "var newMsg = { payload : msg.payload*17, object: 'control' };\nreturn newMsg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 160,
+        "wires": [
+            [
+                "7a5b9d30723d0403"
+            ]
+        ]
+    },
+    {
+        "id": "35b39b6e457217cc",
+        "type": "ha-number",
+        "z": "64973aa54d2b8305",
+        "name": "Heat exchanger temperature preset",
+        "version": 1,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 1,
+        "entityConfig": "37c4f30cbaf80b0c",
+        "mode": "listen",
+        "value": "payload",
+        "valueType": "msg",
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "value"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "temperature",
+                "valueType": "str"
+            }
+        ],
+        "x": 600,
+        "y": 240,
+        "wires": [
+            [
+                "54272e1b855728e3"
+            ]
+        ]
+    },
+    {
+        "id": "2e8db4482255cc8a",
+        "type": "ha-switch",
+        "z": "64973aa54d2b8305",
+        "name": "Preheater",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 2,
+        "entityConfig": "913ddf70b299e3b0",
+        "enableInput": false,
+        "outputOnStateChange": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 680,
+        "y": 320,
+        "wires": [
+            [
+                "11ab5d3a58001bea"
+            ],
+            [
+                "eec60f1be28ef45e"
+            ]
+        ]
+    },
+    {
+        "id": "11ab5d3a58001bea",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "on to raw",
+        "func": "var x\n\nif (msg.payload.boolean = true) {\n    x = 128 ;\n    var newMsg = { payload: x, topic: 'on'}\n    return newMsg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 300,
+        "wires": [
+            [
+                "5ca9a101f544519a"
+            ]
+        ]
+    },
+    {
+        "id": "eec60f1be28ef45e",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "off to raw",
+        "func": "var x\n\nif (msg.payload = true) {\n    x = 0;\n    var newMsg = { payload: x, topic: 'off'}\n    return newMsg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 360,
+        "wires": [
+            [
+                "5ca9a101f544519a"
+            ]
+        ]
+    },
+    {
+        "id": "5ca9a101f544519a",
+        "type": "join",
+        "z": "64973aa54d2b8305",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1170,
+        "y": 320,
+        "wires": [
+            [
+                "d4b614aa3a61ff78"
+            ]
+        ]
+    },
+    {
+        "id": "d4b614aa3a61ff78",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "array to buffer",
+        "func": "var buffer = { payload: msg.payload[0], topic: \"pre-heat\", object: 'pre-heat'};\nreturn buffer;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 320,
+        "wires": [
+            [
+                "a12295c3aecff120"
+            ]
+        ]
+    },
+    {
+        "id": "0e791ee8a876be8c",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "command buffer",
+        "func": "var buffer = [195, 4, 0, 199, 81, 193, 4, 8, 32, 15, 0, global.get('fan_control'), global.get('preheat_control'), 4, 0, global.get('temperature_preset_control'),0,0];\nlet sum1 = 0;\nlet sum2 = 0;\n\nfor (let index = 5; index < buffer.length-2; index++) {\n    sum1 = sum1 + buffer[index];\n    sum2 = (sum2 + sum1);    \n}\n\nbuffer[buffer.length-2] = sum1 % 256;\nbuffer[buffer.length-1] = sum2 % 256;\n\nvar command = {payload: Buffer.from(buffer)};\n\n\nreturn command;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1920,
+        "y": 480,
+        "wires": [
+            [
+                "4939098d33e7cab7"
+            ]
+        ]
+    },
+    {
+        "id": "cf26a61b986167f3",
+        "type": "change",
+        "z": "64973aa54d2b8305",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fan_raw",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1670,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9be3f5176f8be735",
+        "type": "change",
+        "z": "64973aa54d2b8305",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "preheat_raw",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1660,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55a055db86c20978",
+        "type": "change",
+        "z": "64973aa54d2b8305",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temperature_preset_raw",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1620,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a5b9d30723d0403",
+        "type": "change",
+        "z": "64973aa54d2b8305",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fan_control",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1660,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "54272e1b855728e3",
+        "type": "change",
+        "z": "64973aa54d2b8305",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temperature_preset_control",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1610,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a12295c3aecff120",
+        "type": "change",
+        "z": "64973aa54d2b8305",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "preheat_control",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1650,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "749dd37e3565e758",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "command buffer",
+        "func": "var newMsg;\nif (global.get('fan_control') != global.get('fan_raw') || global.get('preheat_control') != global.get('preheat_raw') || global.get('temperature_preset_control') != global.get('temperature_preset_raw')) {\n    newMsg = {payload: 'false'};\n    return newMsg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 480,
+        "wires": [
+            [
+                "0e791ee8a876be8c"
+            ]
+        ]
+    },
+    {
+        "id": "f24c09952615c740",
+        "type": "function",
+        "z": "64973aa54d2b8305",
+        "name": "filter alarm on/off",
+        "func": "var newMsg = { payload: msg.payload[7]/2 };\nreturn newMsg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 1200,
+        "wires": [
+            [
+                "828f28eb083f1624"
+            ]
+        ]
+    },
+    {
+        "id": "828f28eb083f1624",
+        "type": "ha-binary-sensor",
+        "z": "64973aa54d2b8305",
+        "name": "Filter alarm on/off",
+        "entityConfig": "6908faa725f509b3",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "allow",
+        "outputProperties": [],
+        "x": 1590,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    }
+]
